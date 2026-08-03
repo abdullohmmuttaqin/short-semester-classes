@@ -18,14 +18,14 @@ int main()
     cout << "Masukan Nama Mahasiswa : ";
     getline(cin, studentName); // Menggunakan getline agar bisa input nama dengan spasi
 
-    cout << "Masukan NIM Mahasiswa : ";
+    cout << "Masukan NIM Mahasiswa  : ";
     cin >> studentNIM;
 
-    cout << "Jumlah Mata Kuliah SP : ";
+    cout << "Jumlah Mata Kuliah SP  : ";
     cin >> totalCourses;
 
     // ARRAY & PERULANGAN / LOOPING (Materi 4 & 5)
-    // Menyiapkan Arrsay untuk menampung nama matkul dan SKS yang dipilih
+    // Menyiapkan Array untuk menampung nama matkul dan SKS yang dipilih
     string selectedCourseNames[10];
     int selectedCourseSKS[10];
     int totalSKS = 0;
@@ -48,10 +48,48 @@ int main()
         totalSKS += selectedCourseSKS[i];
     }
 
-    cout << "\n----------------------------------------------------" << endl;
-    cout << "Data Mahasiswa Berhasil Direkam!" << endl;
-    cout << "Nama : " << studentName << " | NIM: " << studentNIM << endl;
+    // STRUKTUR KONTROL / IF-ELSE (Materi 6)
+    long pricePerSKS = 150000;
+    long subtotal = totalSKS * pricePerSKS;
+    double discountPercentage = 0.0;
+
+    // Logika penentuan diskon berdasarkan total SKS yang diambil
+    if (totalSKS >= 6)
+    {
+        discountPercentage = 0.10; // Diskon 10% jika ambil 6 SKS atau lebih
+    }
+    else
+    {
+        discountPercentage = 0.0; // Tanpa diskon jika di bawah 6 SKS
+    }
+
+    long discountAmount = subtotal * discountPercentage;
+    long grandTotal = subtotal - discountAmount;
+
+    // INVOICE / STRUK PEMBAYARAN FINAL
+    cout << "\n====================================================" << endl;
+    cout << "               KUITANSI PEMBAYARAN SP               " << endl;
+    cout << "====================================================" << endl;
+    cout << " Nama Mahasiswa : " << studentName << endl;
+    cout << " NIM            : " << studentNIM << endl;
     cout << "----------------------------------------------------" << endl;
+    cout << " Detail Matkul yang Diambil:" << endl;
+
+    // Loop kedua untuk menampilkan ringkasan data dari Array
+    for (int i = 0; i < totalCourses; i++)
+    {
+        cout << " " << (i + 1) << ". " << selectedCourseNames[i]
+             << " (" << selectedCourseSKS[i] << " SKS)" << endl;
+    }
+
+    cout << "----------------------------------------------------" << endl;
+    cout << " Total SKS         : " << totalSKS << " SKS" << endl;
+    cout << " Biaya per SKS     : Rp " << pricePerSKS << endl;
+    cout << " Subtotal Biaya    : Rp " << subtotal << endl;
+    cout << " Diskon (" << (discountPercentage * 100) << "%)     : Rp " << discountAmount << endl;
+    cout << "----------------------------------------------------" << endl;
+    cout << " TOTAL BAYAR       : Rp " << grandTotal << endl;
+    cout << "====================================================" << endl;
 
     return 0;
 }
