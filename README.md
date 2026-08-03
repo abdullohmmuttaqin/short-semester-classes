@@ -1,4 +1,4 @@
-# Logic and Algorithms: College - Short Semester Classes (SP) Management System
+# 🤖 Logic and Algorithms: College - Short Semester Classes (SP) Management System
 
 This repository contains a C++ implementation designed to manage student registration and tuition fees for short-semester classes. Built as part of the Algorithm & Programming course evaluation, this project highlights fundamental programming techniques including structured array management, conditional control flows, iterative loops, and I/O buffering.
 
@@ -42,3 +42,53 @@ flowchart TD
     K --> L
     L --> M[Cetak Kuitansi & Detail Matkul]
     M --> N([End])
+```
+
+---
+
+## 🚀 How to Run Locally
+
+### Prerequisites
+
+Make sure you have a C++ compiler installed (such as GCC/G++ or MinGW).
+
+### Execution Steps
+
+1. Clone this repository:
+    ```
+   git clone https://github.com/abdullohmmuttaqin/short-semester-classes.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd short-semester-classes
+   ```
+
+3. Compile the C++ program:
+    ```
+    g++ main.cpp -o main
+    ```
+
+4. Run the executable file:
+    - On Windows (PowerShell/CMD):
+    ```
+    .\main.exe
+    ```
+    - On Linux/macOS:
+    ```
+    ./main
+    ```
+
+---
+
+## 📑 Course & Student Information
+
+| Field | Details |
+| :--- | :--- |
+| **Course** | Algoritma & Pemrograman II |
+| **Lecturer** | Tri Anggoro, M.Kom. |
+| **Student Name** | Abdullah Muhammad Muttaqim |
+| **Student ID (NIM)** | 22EO10034 |
+| **Class/Semester** | IF 8 B (Semester Pendek TA 2025/2026) |
+| **Major/Faculty** | Informatika/FMIKOM |
+| **Institution** | Universitas Nahdlatul Ulama Al Ghazali Cilacap |
