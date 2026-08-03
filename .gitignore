@@ -1,0 +1,13 @@
+# Executables (File hasil compile)
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Executable tanpa ekstensi (khusus macOS/Linux)
+main
+
+# VS Code directory & Cache
+.vscode/
+*.swp
