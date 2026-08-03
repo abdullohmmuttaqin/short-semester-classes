@@ -30,8 +30,8 @@ flowchart TD
     A([Start]) --> B[Input studentName, studentNIM, totalCourses]
     B --> C[Set totalSKS = 0, i = 0]
     C --> D{i < totalCourses?}
-    D -- Ya --> E[Input selectedCourseNames[i] & selectedCourseSKS[i]]
-    E --> F[totalSKS = totalSKS + selectedCourseSKS[i]]
+    D -- Ya --> E[Input nama matkul dan SKS ke-i]
+    E --> F[Accumulate totalSKS dengan SKS baru]
     F --> G[i = i + 1]
     G --> D
     D -- Tidak --> H[Hitung subtotal = totalSKS * 150000]
