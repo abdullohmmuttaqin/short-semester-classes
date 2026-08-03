@@ -12,7 +12,7 @@ int main()
 
     // INPUT / OUTPUT DASAR (Materi 3)
     cout << "====================================================" << endl;
-    cout << "   COLLEGE - SHORT SEMESTER CLASSES (SP) MANAGEMENT SYSTEM    " << endl;
+    cout << "COLLEGE - SHORT SEMESTER CLASSES (SP) MANAGEMENT SYSTEM" << endl;
     cout << "====================================================" << endl;
 
     cout << "Masukan Nama Mahasiswa : ";
