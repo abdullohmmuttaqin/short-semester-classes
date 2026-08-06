@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    // ABDULLAH MUHAMMAD MUTTAQIM-22EO10034-IF8B
+
     // VARIABEL & TIPE DATA (Materi 1 & 2)
     string studentName;
     string studentNIM;

@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    // ABDULLAH MUHAMMAD MUTTAQIM-22EO10034-IF8B
+
     // VARIABEL & TIPE DATA
     long originalPrice;
     const double DISCOUNT_RATE = 0.10; // Diskon 10% (0.10)

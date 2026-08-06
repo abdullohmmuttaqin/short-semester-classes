@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    // ABDULLAH MUHAMMAD MUTTAQIM-22EO10034-IF8B
+
     // KONSTANTA & VARIABEL
     // const digunakan agar nilai PHI dikunci dan tidak bisa diubah di tengah jalan
     const double PHI = 3.14159;
